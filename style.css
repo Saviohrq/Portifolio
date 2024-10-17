@@ -17,6 +17,27 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5CB8FF;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #5cb8ff;
+    transform: scale(1.10);
+  }
+
 /* ESTILO DO CABEÇALHO */
 header {
     padding: 40px 4%;
@@ -27,29 +48,68 @@ header > .interface {
     align-items: center;
     justify-content: space-between;
 }
- header a {
-    color: #ffff;
+
+header a {
+    color: #5c5c5c;
     text-decoration: none;
+    display: inline-block;
+    transition: .2s;
  }
-  header nav ul {
+
+header nav a:hover {
+    color: #85caff;
+    transform: scale(1.10);
+}
+
+header nav ul {
     list-style-type: none;
   }
 
-  header nav ul li {
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
   }
 
-  header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #5CB8FF;
-    border-radius: 30px;
-    border: 0;
-    cursor: pointer;
-  }
-
-  img {
+header img {
     border-radius: 50px;
   }
+
+  /* ESTILO TOP SITE */
+section.top-site {
+    padding: 40px 4%;
+}
+
+section.top-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.top-site .txt-top-site h1 span {
+    color: #5CB8FF;
+}
+
+.top-site .txt-top-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.top-site .img-top-site {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
