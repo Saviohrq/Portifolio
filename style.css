@@ -35,7 +35,7 @@ body {
     transition: .2s;
   }
 
-.btn-contato button:hover {
+button:hover {
     box-shadow: 0px 0px 8px #5cb8ff;
     transform: scale(1.10);
   }
@@ -156,4 +156,51 @@ section.especialidades .flex {
 .especialidades .espec-box h3 {
     font-size: 28px;
     margin: 15px 0;
+}
+
+/* ESTILO ABOUT */
+section.about {
+    padding: 80px 4%;
+}
+
+section.about img {
+    border-radius: 30px;
+    border: 2px inset #008efa88;
+}
+
+section.about .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.about .txt-about {
+    color: #fff
+}
+
+.about .txt-about h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.about .txt-about h2 span {
+    color:#5CB8FF;
+    display: block;
+}
+
+.about .txt-about p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about .txt-about .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5CB8FF;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
 }
