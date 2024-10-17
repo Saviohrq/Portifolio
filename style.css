@@ -50,7 +50,7 @@ h2.titulo span {
     color:#5CB8FF;
 }
 
-/* ESTILO DO CABEÇALHO */
+/* ESTILO DO HEADER */
 header {
     padding: 40px 4%;
 }
@@ -84,6 +84,7 @@ header nav ul li {
 
 header img {
     border-radius: 50px;
+    scale: 0.6;
   }
 
   /* ESTILO TOP SITE */
@@ -193,7 +194,7 @@ section.about .flex {
     text-align: justify;
 }
 
-.about .txt-about .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -297,4 +298,44 @@ form .btn-enviar input {
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #008efa2c;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding:  20px 0;
+}
+
+.borda {
+    border-top: 2px solid #5CB8FF;
+}
+
+footer .line-footer p i {
+    color: #5CB8FF;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .flex .logo-footer {
+    align-content: space-between;
+}
+
+.logo-footer img {
+    border-radius: 10px;
+    margin: 0 5px;
+    border: none;
+    width: 60px;
+    height: 60px;
 }
