@@ -100,20 +100,33 @@ header img {
 }
 
 /* ESTILO DO MENU MOBILE */
+.btn-open-menu{
+    display: none;
+}
+
 .btn-open-menu i {
     color:#5CB8FF;
     font-size: 40px;
 }
 
 .menu-mobile {
-    background-color: #000000;
+    background-color: #000;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
-    width: 55%;
+    z-index: 99999;
+    width: 0%;
     overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.open-menu {
+    width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu {
+    display: block;
 }
 
 .menu-mobile nav ul {
@@ -412,6 +425,10 @@ footer .flex .logo-footer {
     .top-site .flex,
     .about .flex {
         flex-direction: column-reverse;
+    }
+
+    .btn-open-menu{
+        display: block;
     }
 
     /* HEADER */
