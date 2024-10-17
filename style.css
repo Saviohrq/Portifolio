@@ -58,7 +58,7 @@ h2.titulo span {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 8888;
+    z-index: 88888;
     display: none;
 }
 
@@ -122,7 +122,7 @@ header img {
 }
 
 .menu-mobile.open-menu {
-    width: 70%;
+    width: 50%;
 }
 
 .menu-mobile.open-menu ~ .overlay-menu {
